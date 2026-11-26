@@ -54,7 +54,7 @@ export function TopBar() {
             <span className="flex h-7 w-7 items-center justify-center rounded-[2px] border border-hairline-strong bg-recessed font-mono text-[11px] font-semibold tracking-wider text-accent transition-colors group-hover:border-accent">
               KSP
             </span>
-            <span className="text-sm font-medium tracking-[-0.015em]">
+            <span className="text-sm font-medium tracking-[-0.015em] whitespace-nowrap">
               Kristian S. Pedersen
             </span>
           </a>
@@ -64,7 +64,7 @@ export function TopBar() {
             className="hidden h-3.5 w-[1px] bg-hairline xl:block"
           />
 
-          <div className="hidden items-center gap-2 font-mono text-[11px] text-ink-muted xl:flex">
+          <div className="hidden items-center gap-2 font-mono text-[11px] whitespace-nowrap text-ink-muted xl:flex">
             <span>{PROFILE_CONFIG.coordinates}</span>
             <span>·</span>
             <span>
@@ -83,7 +83,7 @@ export function TopBar() {
               key={item.id}
               id={item.id}
               href={item.href}
-              className="group rounded-[2px] px-2.5 py-1.5 text-xs font-medium text-ink-secondary transition-colors hover:bg-panel hover:text-ink"
+              className="group rounded-[2px] px-2.5 py-1.5 text-xs font-medium whitespace-nowrap text-ink-secondary transition-colors hover:bg-panel hover:text-ink"
             >
               <span className="mr-1.5 font-mono text-[10px] text-ink-muted transition-colors group-hover:text-accent">
                 {item.code}

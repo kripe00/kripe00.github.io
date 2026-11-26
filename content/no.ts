@@ -11,7 +11,7 @@ export const contentNO: SiteContent = {
   nav: {
     projects: "Prosjekter",
     stack: "Teknologi",
-    workbench: "Utenfor skjermen",
+    workbench: "Håndverk",
     timeline: "Erfaring",
     contact: "Kontakt",
     themeDarkLabel: "Mørk",
