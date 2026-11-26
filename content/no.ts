@@ -4,9 +4,9 @@ import type { SiteContent } from "./types";
 export const contentNO: SiteContent = {
   meta: {
     htmlLang: "nb",
-    title: "Kristian Sollie Pedersen — Fullstack-utvikler, 3D Web & AI-sikkerhet",
+    title: "Kristian Sollie Pedersen | Fullstack-utvikler, 3D Web & AI-sikkerhet",
     description:
-      "Portefølje og digitalt verksted for Kristian Sollie Pedersen — norsk fullstack-utvikler, romlig 3D-ingeniør, AI-sikkerhetsutvikler, maker og BJJ brunt belte fra Råholt/Eidsvoll.",
+      "Portefølje og digitalt verksted for Kristian Sollie Pedersen, norsk fullstack-utvikler, romlig 3D-ingeniør, AI-sikkerhetsutvikler, maker og BJJ brunt belte fra Råholt/Eidsvoll.",
   },
   nav: {
     projects: "Prosjekter",
@@ -109,7 +109,7 @@ export const contentNO: SiteContent = {
         index: "PRJ-01",
         title: "AxisOS & Floorplan Studio",
         contextBadge: "Profesjonell / Nåværende",
-        period: "2026 – nå",
+        period: "2026 - nå",
         category: "spatial",
         highlightBadge: "Finalist · Innovasjonsprisen (Gardermokonferansen)",
         summary:
@@ -179,7 +179,7 @@ export const contentNO: SiteContent = {
         id: "meltdown-is-propaganda",
         index: "PRJ-03",
         title: "Meltdown is Propaganda",
-        contextBadge: "Indie 3D-spill — GitHub Game Off",
+        contextBadge: "Indie 3D-spill · GitHub Game Off",
         period: "Game Jam / 3D Web",
         category: "spatial",
         highlightBadge: "Sanntids reaktorfysikk i nettleseren",
@@ -226,7 +226,7 @@ export const contentNO: SiteContent = {
         summary:
           "Visuell flytkart-app for Brasiliansk Jiu-Jitsu-teknikker (tapMap), kombinert med skreddersydde interne webapper for graderingssporing, vaskelister, timelister og daglig drift i Eidsvoll Kampsportklubb og Hadeland Kampsport.",
         problem:
-          "BJJ er et komplekst beslutningstre av posisjoner, overganger og kontringer som er vanskelig å strukturere i flate videolister — samtidig som frivillige kampsportklubber ofte drukner i manuelle regneark for oppmøte, vask og instruktørtimer.",
+          "BJJ er et komplekst beslutningstre av posisjoner, overganger og kontringer som er vanskelig å strukturere i flate videolister. Samtidig drukner frivillige kampsportklubber ofte i manuelle regneark for oppmøte, vask og instruktørtimer.",
         architecture:
           "Mobilvennlige Progressive Web Apps (PWA) bygget i Next.js og TypeScript med relasjonelle grafstrukturer i PostgreSQL / Supabase og sanntidssynkronisering, tilpasset rask registrering på mobil rett etter økt.",
         deliverables: [
@@ -261,13 +261,13 @@ export const contentNO: SiteContent = {
         index: "PRJ-05",
         title: "Eidsvoll Kampsportklubb (kampsporteidsvoll.no)",
         contextBadge: "Klubbplattform & CMS i produksjon",
-        period: "2026 – nå",
+        period: "2026 - nå",
         category: "web",
         highlightBadge: "TinaCMS · Interaktiv veiviser & AI-assistent",
         summary:
-          "Komplett, lynrask klubbnettside og medlemsportal for Eidsvoll Kampsportklubb på Dal — med Git-basert publisering i TinaCMS, interaktiv kampsport-veiviser, IBJJF-regelmodul, timeplan og innebygd klubb-assistent.",
+          "Komplett, lynrask klubbnettside og medlemsportal for Eidsvoll Kampsportklubb på Dal, med Git-basert publisering i TinaCMS, interaktiv kampsport-veiviser, IBJJF-regelmodul, timeplan og innebygd klubb-assistent.",
         problem:
-          "Nye medlemmer og foresatte trenger rask, tillitsvekkende oversikt over partier, aldersgrupper, prøveperiode og regler på mobil — mens styret og instruktører må kunne publisere nyheter og oppdatere timeplaner uten å redigere kode.",
+          "Nye medlemmer og foresatte trenger rask, tillitsvekkende oversikt over partier, aldersgrupper, prøveperiode og regler på mobil. Samtidig må styret og instruktører kunne publisere nyheter og oppdatere timeplaner uten å redigere kode.",
         architecture:
           "Bygget med Next.js 16, React 19, TypeScript og Tailwind CSS v4, koblet mot TinaCMS for skjemastyrt redaksjonelt innhold og Firebase (Hosting, Firestore & Functions) for interaktive tjenester og EKK-assistenten.",
         deliverables: [
@@ -308,7 +308,7 @@ export const contentNO: SiteContent = {
     sectionCode: "SEC-02 // TEKNOLOGISTAKK & INGENIØRFILOSOFI",
     title: "Verktøykasse organisert etter domene",
     subtitle:
-      "Ingen kunstige prosentmålere — bare verktøyene jeg faktisk bruker for å bygge robuste systemer fra database og 3D-scene til sikkerhetstesting og fysiske deler.",
+      "Ingen kunstige prosentmålere, bare verktøyene jeg faktisk bruker for å bygge robuste systemer fra database og 3D-scene til sikkerhetstesting og fysiske deler.",
     domains: [
       {
         id: "frontend-3d",
@@ -410,7 +410,7 @@ export const contentNO: SiteContent = {
         description:
           "Over et tiår på matta har formet hvordan jeg tilnærmer meg komplekse problemer: press skaper klarhet, og små mekaniske justeringer slår rå kraft. Som instruktør og styreleder i Eidsvoll Kampsportklubb kombinerer jeg strukturert undervisning med praktisk organisasjonsutvikling og egne digitale verktøy.",
         highlights: [
-          "Trent Brasiliansk Jiu-Jitsu kontinuerlig siden 2013 — gradert til brunt belte",
+          "Trent Brasiliansk Jiu-Jitsu kontinuerlig siden 2013, gradert til brunt belte",
           "Styreleder og instruktør i Eidsvoll Kampsportklubb med ansvar for drift og faglig rød tråd",
           "Utvikler klubbens egne digitale systemer direkte basert på reelle behov på matta",
         ],
@@ -450,7 +450,7 @@ export const contentNO: SiteContent = {
         title: "Smarthus, Knivsliping, 70-tallshus & Bakestål",
         subtitle: "Lokal infrastruktur, håndverktøy og langtidsheving",
         description:
-          "Utenom kode og trening trives jeg best med prosjekter som gir konkret, målbar kvalitet i hverdagen — enten det er hel-lokal automasjon uten skyavhengighet, oppussing av treverk og etasjeskiller i et 70-tallshus, japanske slipesteiner eller glovarmt bakestål.",
+          "Utenom kode og trening trives jeg best med prosjekter som gir konkret, målbar kvalitet i hverdagen, enten det er hel-lokal automasjon uten skyavhengighet, oppussing av treverk og etasjeskiller i et 70-tallshus, japanske slipesteiner eller glovarmt bakestål.",
         highlights: [
           "Lokal Home Assistant-infrastruktur i Docker med fokus på driftssikkerhet uten skytvang",
           "Frihåndssliping av kjøkkenkniver på våtstein og lærstropp helt opp til speilblank egg",
@@ -459,7 +459,7 @@ export const contentNO: SiteContent = {
         specs: [
           { label: "Automasjon", value: "Home Assistant (Lokal)" },
           { label: "Eggfinish", value: "Våtstein → Speilpolert" },
-          { label: "Hevetid", value: "48–72t kaldheving" },
+          { label: "Hevetid", value: "48-72t kaldheving" },
         ],
         spanClass: "lg:col-span-12",
       },
@@ -474,7 +474,7 @@ export const contentNO: SiteContent = {
     items: [
       {
         id: "axisos",
-        period: "2026 – nå",
+        period: "2026 - nå",
         role: "Fullstack-utvikler",
         organization: "AxisOS",
         location: "Gardermoen / Romerike",
@@ -497,7 +497,7 @@ export const contentNO: SiteContent = {
       },
       {
         id: "eidsvoll-rambukk",
-        period: "2026 – nå",
+        period: "2026 - nå",
         role: "Styreleder & Teknisk ansvarlig",
         organization: "Eidsvoll Kampsportklubb / Rambukk",
         location: "Eidsvoll, Norge",
@@ -509,7 +509,7 @@ export const contentNO: SiteContent = {
       },
       {
         id: "kristiania-bsc",
-        period: "2023 – 2026",
+        period: "2023 - 2026",
         role: "Bachelor i Frontend- og mobilutvikling",
         organization: "Høyskolen Kristiania",
         location: "Oslo, Norge",

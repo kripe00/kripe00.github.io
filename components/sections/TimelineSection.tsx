@@ -76,7 +76,7 @@ export function TimelineSection() {
                       <h3 className="mt-1.5 text-lg font-semibold tracking-[-0.015em] text-ink">
                         {entry.role}{" "}
                         <span className="font-normal text-ink-secondary">
-                          — {entry.organization}
+                          · {entry.organization}
                         </span>
                       </h3>
                     </div>

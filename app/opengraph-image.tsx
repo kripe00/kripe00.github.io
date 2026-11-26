@@ -4,7 +4,7 @@ import { PROFILE_CONFIG } from "@/content";
 export const dynamic = "force-static";
 
 export const alt =
-  "Kristian Sollie Pedersen — Fullstack-utvikler, Romlig 3D & AI-sikkerhet";
+  "Kristian Sollie Pedersen | Fullstack-utvikler, Romlig 3D & AI-sikkerhet";
 
 export const size = {
   width: 1200,

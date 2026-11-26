@@ -4,9 +4,9 @@ import type { SiteContent } from "./types";
 export const contentEN: SiteContent = {
   meta: {
     htmlLang: "en",
-    title: "Kristian Sollie Pedersen — Fullstack Developer, 3D Web & AI Security",
+    title: "Kristian Sollie Pedersen | Fullstack Developer, 3D Web & AI Security",
     description:
-      "Personal portfolio and digital workbench of Kristian Sollie Pedersen — Norwegian Fullstack Developer, 3D Web Engineer, AI Security Researcher, Maker, and BJJ Brown Belt.",
+      "Personal portfolio and digital workbench of Kristian Sollie Pedersen, Norwegian Fullstack Developer, 3D Web Engineer, AI Security Researcher, Maker, and BJJ Brown Belt.",
   },
   nav: {
     projects: "Projects",
@@ -109,7 +109,7 @@ export const contentEN: SiteContent = {
         index: "PRJ-01",
         title: "AxisOS & Floorplan Studio",
         contextBadge: "Professional / Current",
-        period: "2026 – present",
+        period: "2026 - present",
         category: "spatial",
         highlightBadge: "Innovation Award Finalist (Gardermokonferansen)",
         summary:
@@ -179,7 +179,7 @@ export const contentEN: SiteContent = {
         id: "meltdown-is-propaganda",
         index: "PRJ-03",
         title: "Meltdown is Propaganda",
-        contextBadge: "Indie 3D Game — GitHub Game Off",
+        contextBadge: "Indie 3D Game · GitHub Game Off",
         period: "Game Jam / 3D Web",
         category: "spatial",
         highlightBadge: "Real-time reactor physics in the browser",
@@ -226,7 +226,7 @@ export const contentEN: SiteContent = {
         summary:
           "Visual decision-tree and flowchart app for Brazilian Jiu-Jitsu techniques (tapMap), accompanied by custom internal PWAs handling belt progression, laundry rosters, instructor timesheets, and operations for Eidsvoll Kampsportklubb and Hadeland Kampsport.",
         problem:
-          "BJJ is a directed graph of positions, transitions, and counters that flat video playlists fail to capture — while volunteer-run academies lose hours to brittle spreadsheets for attendance, mat/loaner-gi laundry, and coaching hours.",
+          "BJJ is a directed graph of positions, transitions, and counters that flat video playlists fail to capture. Meanwhile, volunteer-run academies lose hours to brittle spreadsheets for attendance, mat/loaner-gi laundry, and coaching hours.",
         architecture:
           "Mobile-first Progressive Web Apps engineered with Next.js and TypeScript atop PostgreSQL / Supabase relational graph schemas and real-time sync, designed for one-handed logging right after rolling.",
         deliverables: [
@@ -261,13 +261,13 @@ export const contentEN: SiteContent = {
         index: "PRJ-05",
         title: "Eidsvoll Kampsportklubb (kampsporteidsvoll.no)",
         contextBadge: "Production Club Platform & CMS",
-        period: "2026 – present",
+        period: "2026 - present",
         category: "web",
         highlightBadge: "TinaCMS · Interactive Recommender & AI Assistant",
         summary:
-          "Full-featured, high-speed web platform and member portal for Eidsvoll Kampsportklubb — featuring Git-backed TinaCMS publishing, an interactive class recommender, IBJJF rules engine, live timetable, and an embedded club AI assistant.",
+          "Full-featured, high-speed web platform and member portal for Eidsvoll Kampsportklubb, featuring Git-backed TinaCMS publishing, an interactive class recommender, IBJJF rules engine, live timetable, and an embedded club AI assistant.",
         problem:
-          "Prospective members and parents need immediate mobile clarity on classes, age groups, free-trial onboarding, and competition rules — while board members and coaches need to publish news and schedule updates without touching code.",
+          "Prospective members and parents need immediate mobile clarity on classes, age groups, free-trial onboarding, and competition rules, while board members and coaches need to publish news and schedule updates without touching code.",
         architecture:
           "Engineered with Next.js 16, React 19, TypeScript, and Tailwind CSS v4, paired with TinaCMS for structured editorial workflows and Firebase (Hosting, Firestore & Functions) backing interactive features and the EKK assistant.",
         deliverables: [
@@ -308,7 +308,7 @@ export const contentEN: SiteContent = {
     sectionCode: "SEC-02 // TECH STACK & ENGINEERING PHILOSOPHY",
     title: "Production toolkit organized by domain",
     subtitle:
-      "No arbitrary skill-percentage bars — just the concrete stack I rely on across spatial interfaces, backend architecture, adversarial AI testing, and physical fabrication.",
+      "No arbitrary skill-percentage bars, just the concrete stack I rely on across spatial interfaces, backend architecture, adversarial AI testing, and physical fabrication.",
     domains: [
       {
         id: "frontend-3d",
@@ -386,7 +386,7 @@ export const contentEN: SiteContent = {
         code: "P-02",
         title: "Spatial precision without bloat",
         description:
-          "3D on the web should behave like a responsive precision instrument, not a heavy novelty demo — clean scene graphs, clear measurements, and graceful mobile fallbacks.",
+          "3D on the web should behave like a responsive precision instrument, not a heavy novelty demo. Clean scene graphs, clear measurements, and graceful mobile fallbacks.",
       },
       {
         code: "P-03",
@@ -410,7 +410,7 @@ export const contentEN: SiteContent = {
         description:
           "More than a decade on the mats has shaped how I approach hard problems: stay calm under pressure, favor leverage and structure over brute force, and iterate every week. As instructor and Chairman of the Board at Eidsvoll Kampsportklubb, I pair structured coaching with modernizing club operations.",
         highlights: [
-          "Training Brazilian Jiu-Jitsu continuously since 2013 — ranked Brown Belt",
+          "Training Brazilian Jiu-Jitsu continuously since 2013, ranked Brown Belt",
           "Chairman & instructor at Eidsvoll Kampsportklubb leading curriculum and governance",
           "Building custom club software informed directly by daily friction on the mats",
         ],
@@ -450,7 +450,7 @@ export const contentEN: SiteContent = {
         title: "Local Smart Home, Mirror-Edge Knives, 70s House & Baking Steel",
         subtitle: "Self-hosted automation, whetstones, renovation, and cold-fermented dough",
         description:
-          "Away from the keyboard and the academy, I gravitate toward tactile crafts with measurable results — running cloud-free Home Assistant automation, renovating a 1970s Norwegian home room by room, sharpening kitchen steel to a mirror bevel, and baking long-fermented dough.",
+          "Away from the keyboard and the academy, I gravitate toward tactile crafts with measurable results: running cloud-free Home Assistant automation, renovating a 1970s Norwegian home room by room, sharpening kitchen steel to a mirror bevel, and baking long-fermented dough.",
         highlights: [
           "Local-first Home Assistant & Docker infrastructure engineered for zero cloud lock-in",
           "Freehand whetstone and leather-strop knife sharpening up to a mirror-polished bevel",
@@ -459,7 +459,7 @@ export const contentEN: SiteContent = {
         specs: [
           { label: "Automation", value: "Home Assistant (Local)" },
           { label: "Edge Finish", value: "Whetstone → Mirror" },
-          { label: "Fermentation", value: "48–72h Cold Proof" },
+          { label: "Fermentation", value: "48-72h Cold Proof" },
         ],
         spanClass: "lg:col-span-12",
       },
@@ -474,7 +474,7 @@ export const contentEN: SiteContent = {
     items: [
       {
         id: "axisos",
-        period: "2026 – present",
+        period: "2026 - present",
         role: "Fullstack Developer",
         organization: "AxisOS",
         location: "Gardermoen / Romerike, Norway",
@@ -497,7 +497,7 @@ export const contentEN: SiteContent = {
       },
       {
         id: "eidsvoll-rambukk",
-        period: "2026 – present",
+        period: "2026 - present",
         role: "Chairman of the Board & Technical Lead",
         organization: "Eidsvoll Kampsportklubb / Rambukk",
         location: "Eidsvoll, Norway",
@@ -509,7 +509,7 @@ export const contentEN: SiteContent = {
       },
       {
         id: "kristiania-bsc",
-        period: "2023 – 2026",
+        period: "2023 - 2026",
         role: "BSc in Frontend & Mobile Development",
         organization: "Kristiania University College",
         location: "Oslo, Norway",
