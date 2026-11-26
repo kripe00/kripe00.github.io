@@ -82,7 +82,7 @@ function buildFloorplanBoxes(extrude: number): BoxPrimitive[] {
       min: { x: -3.7, y: -2.3, z: 0 },
       max: { x: -1.3, y: 1.4, z: 0.95 * h },
       tone: "primary",
-      label: "STAGE // Z+1.2m",
+      label: "SCENE",
     },
     // Overhead Trusses (supported by 2 corner towers)
     {
@@ -99,20 +99,20 @@ function buildFloorplanBoxes(extrude: number): BoxPrimitive[] {
       min: { x: -3.68, y: -2.25, z: 2.15 * h },
       max: { x: -1.5, y: 1.4, z: 2.4 * h },
       tone: "cyan",
-      label: "RIG TRUSS",
+      label: "RIGG",
     },
     // Audience / Expo Modular Seating Zones
     {
       min: { x: -0.4, y: -2.2, z: 0 },
       max: { x: 1.35, y: -0.5, z: 0.55 * h },
       tone: "neutral",
-      label: "ZONE A",
+      label: "SONE A",
     },
     {
       min: { x: -0.4, y: 0.1, z: 0 },
       max: { x: 1.35, y: 1.8, z: 0.55 * h },
       tone: "neutral",
-      label: "ZONE B",
+      label: "SONE B",
     },
     {
       min: { x: 1.9, y: -2.2, z: 0 },
@@ -124,7 +124,7 @@ function buildFloorplanBoxes(extrude: number): BoxPrimitive[] {
       min: { x: 2.1, y: 0.55, z: 0 },
       max: { x: 3.65, y: 2.25, z: 1.25 * h },
       tone: "primary",
-      label: "FOH CTRL",
+      label: "FOH",
     },
   ];
 }
@@ -145,7 +145,7 @@ function buildReactorBoxes(extrude: number, phase: number): BoxPrimitive[] {
         min: { x: gx * 1.35 - 0.42, y: gy * 1.35 - 0.42, z: 0 },
         max: { x: gx * 1.35 + 0.42, y: gy * 1.35 + 0.42, z: rodHeight },
         tone: isHot ? "primary" : isControl ? "cyan" : "neutral",
-        label: gx === 0 && gy === 0 ? "CH-00 // AZ-5" : undefined,
+        label: gx === 0 && gy === 0 ? "AZ-5" : undefined,
       });
     }
   }

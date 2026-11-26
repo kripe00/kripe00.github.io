@@ -4,7 +4,7 @@ import { PROFILE_CONFIG } from "@/content";
 export const dynamic = "force-static";
 
 export const alt =
-  "Kristian Sollie Pedersen | Fullstack-utvikler, Romlig 3D & AI-sikkerhet";
+  "Kristian Sollie Pedersen | Fullstack-utvikler, 3D Web & AI-sikkerhet";
 
 export const size = {
   width: 1200,
@@ -42,32 +42,13 @@ export default function OpenGraphImage() {
             fontFamily: "monospace",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <div
-              style={{
-                width: "12px",
-                height: "12px",
-                backgroundColor: "#F59E0B",
-              }}
-            />
-            <span style={{ color: "#F59E0B", fontWeight: 700 }}>
-              SPEC-00 // NORDIC TECHNICAL WORKBENCH
-            </span>
-          </div>
+          <span style={{ color: "#F59E0B", fontWeight: 700 }}>
+            KRISTIAN SOLLIE PEDERSEN
+          </span>
           <span>{PROFILE_CONFIG.coordinates}</span>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-          <div
-            style={{
-              fontSize: 22,
-              color: "#38BDF8",
-              fontFamily: "monospace",
-              letterSpacing: "0.08em",
-            }}
-          >
-            KRISTIAN SOLLIE PEDERSEN
-          </div>
           <div
             style={{
               fontSize: 54,
@@ -88,8 +69,7 @@ export default function OpenGraphImage() {
               lineHeight: 1.4,
             }}
           >
-            AxisOS & Floorplan Studio · Enterprise AI Security · Three.js ·
-            Parametric CAD
+            AxisOS & Floorplan Studio · AI-sikkerhet · Three.js · Parametrisk CAD
           </div>
         </div>
 
@@ -104,8 +84,8 @@ export default function OpenGraphImage() {
             fontFamily: "monospace",
           }}
         >
-          <span>Fullstack @ AxisOS · BSc Høyskolen Kristiania</span>
-          <span style={{ color: "#10B981" }}>Eidsvoll / Romerike, Norge</span>
+          <span>Fullstack-utvikler @ AxisOS</span>
+          <span>Eidsvoll, Norge</span>
         </div>
       </div>
     ),

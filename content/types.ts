@@ -111,7 +111,6 @@ export interface SiteContent {
     menuCloseLabel: string;
   };
   hero: {
-    specCode: string;
     eyebrow: string;
     headline: string;
     subheadlineLead: string;
@@ -123,7 +122,6 @@ export interface SiteContent {
     secondaryCta: string;
     cadViewport: {
       panelTitle: string;
-      statusLive: string;
       dragHint: string;
       resetView: string;
       orthoLabel: string;
@@ -182,19 +180,16 @@ export interface SiteContent {
     sectionCode: string;
     title: string;
     subtitle: string;
-    activeBadge: string;
     items: TimelineItem[];
   };
   contact: {
     sectionCode: string;
     title: string;
     subtitle: string;
-    availabilityLabel: string;
     availabilityValue: string;
     linkedinCtaLabel: string;
     githubCtaLabel: string;
     channelsLabel: string;
-    coordinatesLabel: string;
     footerNote: string;
     buildStamp: string;
   };

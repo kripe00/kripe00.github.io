@@ -24,22 +24,7 @@ export function HeroSection() {
       className="relative border-b border-hairline pt-10 pb-14 sm:pt-14 sm:pb-20"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        {/* Top CAD Spec-Sheet Metadata Line */}
-        <div className="mb-8 flex flex-wrap items-center justify-between gap-3 border-b border-hairline pb-3.5 font-mono text-[11px] tracking-[0.12em] text-ink-muted uppercase">
-          <div className="flex items-center gap-2.5">
-            <span className="inline-block h-2 w-2 rounded-[1px] bg-accent" />
-            <span className="text-ink-secondary">{hero.specCode}</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span>{PROFILE_CONFIG.coordinates}</span>
-            <span aria-hidden="true" className="text-hairline-strong">
-              /
-            </span>
-            <span>{PROFILE_CONFIG.buildVersion}</span>
-          </div>
-        </div>
-
-        {/* Main 12-Col Spec Sheet Grid */}
+        {/* Main 12-Col Grid */}
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Left Column: Headline, Subheadline, CTAs & External Channels */}
           <motion.div

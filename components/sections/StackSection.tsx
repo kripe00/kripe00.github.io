@@ -39,9 +39,6 @@ export function StackSection() {
                   <span className="font-semibold text-accent">
                     {domain.code}
                   </span>
-                  <span className="text-ink-muted">
-                    {String(domain.items.length).padStart(2, "0")} UNITS
-                  </span>
                 </div>
 
                 <h3 className="text-lg font-semibold tracking-[-0.015em] text-ink">
