@@ -102,7 +102,11 @@ export default function RootLayout({
       addressLocality: "Råholt / Eidsvoll",
       addressCountry: "NO",
     },
-    sameAs: [PROFILE_CONFIG.links.github, PROFILE_CONFIG.links.linkedin],
+    sameAs: [
+      PROFILE_CONFIG.links.github,
+      PROFILE_CONFIG.links.linkedin,
+      PROFILE_CONFIG.links.makerworld,
+    ],
   };
 
   return (

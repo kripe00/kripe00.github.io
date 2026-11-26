@@ -9,7 +9,7 @@ export const PROFILE_CONFIG = {
   links: {
     github: "https://github.com/kripe00",
     linkedin: "https://www.linkedin.com/in/kristian-sollie-pedersen-9927902a4",
-    makerworld: "https://makerworld.com",
+    makerworld: "https://makerworld.com/en/@user_2633843573",
     repos: {
       tapMap: "https://github.com/kripe00/tapMap",
       eidsvollBjj: "https://github.com/kripe00/eidsvoll-kampsportklubb",

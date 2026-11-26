@@ -398,8 +398,8 @@ export const contentEN: SiteContent = {
         ],
         spanClass: "lg:col-span-5",
         externalLink: {
-          label: "Inspect AxisForge & CAD repo",
-          href: PROFILE_CONFIG.links.repos.axisForge,
+          label: "View models on MakerWorld",
+          href: PROFILE_CONFIG.links.makerworld,
         },
       },
       {
