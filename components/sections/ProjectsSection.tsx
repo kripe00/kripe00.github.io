@@ -322,66 +322,6 @@ function ProjectSchematic({
           </text>
         </svg>
       );
-    case "clinic":
-      return (
-        <svg
-          viewBox="0 0 220 110"
-          className="h-24 w-full text-ink-muted"
-          aria-hidden="true"
-        >
-          <rect
-            x="16"
-            y="14"
-            width="188"
-            height="82"
-            fill="none"
-            stroke="currentColor"
-            strokeOpacity="0.45"
-          />
-          <line
-            x1="16"
-            y1="30"
-            x2="204"
-            y2="30"
-            stroke="currentColor"
-            strokeOpacity="0.45"
-          />
-          <rect
-            x="26"
-            y="40"
-            width="98"
-            height="22"
-            fill="var(--accent-cyan-soft)"
-            stroke="var(--accent-cyan)"
-          />
-          <rect
-            x="26"
-            y="68"
-            width="56"
-            height="16"
-            fill="var(--accent-primary-soft)"
-            stroke="var(--accent-primary)"
-          />
-          <rect
-            x="136"
-            y="40"
-            width="56"
-            height="44"
-            fill="none"
-            stroke="currentColor"
-            strokeOpacity="0.55"
-          />
-          <text
-            x="145"
-            y="65"
-            fill="var(--status-live)"
-            fontSize="8"
-            fontFamily="monospace"
-          >
-            LCP 0.4s
-          </text>
-        </svg>
-      );
   }
 }
 
@@ -408,13 +348,7 @@ export function ProjectsSection() {
     }));
   };
 
-  const filterKeys: ProjectCategory[] = [
-    "all",
-    "spatial",
-    "security",
-    "saas",
-    "client",
-  ];
+  const filterKeys: ProjectCategory[] = ["all", "spatial", "security", "saas"];
 
   return (
     <section

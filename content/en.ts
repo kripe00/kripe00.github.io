@@ -89,11 +89,10 @@ export const contentEN: SiteContent = {
     subtitle:
       "Spanning commercial 2D/3D spatial planning and enterprise AI security to real-time browser simulations and bespoke community SaaS.",
     filters: {
-      all: "All Systems (05)",
+      all: "All Systems (04)",
       spatial: "Spatial 3D & Sim",
       security: "AI & Security",
       saas: "Platform & SaaS",
-      client: "Client Web",
     },
     labels: {
       problem: "Problem Statement",
@@ -260,34 +259,6 @@ export const contentEN: SiteContent = {
             kind: "github",
           },
         ],
-      },
-      {
-        id: "selected-client-work",
-        index: "PRJ-05",
-        title: "Selected Client Engineering (e.g. David Jansen Physiotherapy)",
-        contextBadge: "Client Work / Healthcare & Local Business",
-        period: "Freelance / Commissioned",
-        category: "client",
-        highlightBadge: "Sub-second loads & conversion clarity",
-        summary:
-          "Modern, fast, and conversion-focused clinic website engineered from the ground up for David Jansen Fysioterapi and selected regional clients — zero bloated page builders or third-party script drag.",
-        problem:
-          "Independent clinics and regional businesses often suffer from slow, cluttered template sites where mobile patients struggle to find treatment details, pricing, directions, and booking actions.",
-        architecture:
-          "Bespoke Next.js architecture utilizing static generation, semantic HTML5, structured local-business metadata, high-contrast typography, and direct conversion paths from the initial viewport.",
-        deliverables: [
-          "Mobile-first patient information hierarchy surfacing treatments, clinic location, and booking immediately",
-          "Near-instant Core Web Vitals, strict WCAG contrast compliance, and clean technical SEO",
-          "Maintainable, typed content structure allowing effortless copy and schedule updates",
-        ],
-        metrics: [
-          { label: "Focus", value: "Conversion & Trust" },
-          { label: "Vitals", value: "Sub-second LCP" },
-          { label: "Scope", value: "Design → Production" },
-        ],
-        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-        schematicKind: "clinic",
-        links: [],
       },
     ],
   },

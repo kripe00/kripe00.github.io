@@ -89,11 +89,10 @@ export const contentNO: SiteContent = {
     subtitle:
       "Fra kommersiell 2D/3D-arealplanlegging og enterprise AI-sikkerhet til sanntids 3D-simulering og skreddersydde bransjesystemer.",
     filters: {
-      all: "Alle systemer (05)",
+      all: "Alle systemer (04)",
       spatial: "Romlig 3D & Spill",
       security: "AI & Sikkerhet",
       saas: "Plattform & SaaS",
-      client: "Weboppdrag",
     },
     labels: {
       problem: "Problemstilling",
@@ -260,34 +259,6 @@ export const contentNO: SiteContent = {
             kind: "github",
           },
         ],
-      },
-      {
-        id: "selected-client-work",
-        index: "PRJ-05",
-        title: "Utvalgte Weboppdrag (bl.a. David Jansen Fysioterapi)",
-        contextBadge: "Kundeoppdrag / Klinikk & Bedrift",
-        period: "Frilans / Oppdrag",
-        category: "client",
-        highlightBadge: "Lynrask lastetid & lokal SEO",
-        summary:
-          "Moderne, rask og konverteringsfokusert klinikknettside bygget fra bunnen av for David Jansen Fysioterapi og utvalgte lokale oppdragsgivere — uten tunge malverk eller unødvendige tredjepartsskript.",
-        problem:
-          "Lokale helseaktører og bedrifter har ofte utdaterte eller trege nettsider der pasienter på mobil bruker for lang tid på å finne behandlingstilbud, priser, lokasjon og timebestilling.",
-        architecture:
-          "Skreddersydd Next.js-arkitektur med statisk generering, semantisk HTML5, strukturerte skjemadata for lokale søk, tilgjengelig typografi og friksjonsfrie handlingsløp fra første skjermbilde.",
-        deliverables: [
-          "Tydelig informasjonsarkitektur tilpasset pasienter på mobil med umiddelbar oversikt over tjenester og kontakt",
-          "Toppscore på ytelse, tilgjengelighet og teknisk SEO uten oppblåste sidebyggere",
-          "Vedlikeholdsvennlig komponentstruktur som gjør tekst- og prisoppdateringer forutsigbare",
-        ],
-        metrics: [
-          { label: "Fokus", value: "Konvertering & Tillit" },
-          { label: "Ytelse", value: "Sub-sekund LCP" },
-          { label: "Leveranse", value: "Design → Produksjon" },
-        ],
-        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-        schematicKind: "clinic",
-        links: [],
       },
     ],
   },

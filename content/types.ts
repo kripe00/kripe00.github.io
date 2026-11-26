@@ -1,12 +1,7 @@
 export type Locale = "no" | "en";
 export type ThemeMode = "dark" | "blueprint";
 
-export type ProjectCategory =
-  | "all"
-  | "spatial"
-  | "security"
-  | "saas"
-  | "client";
+export type ProjectCategory = "all" | "spatial" | "security" | "saas";
 
 export interface ProjectLink {
   label: string;
@@ -33,7 +28,7 @@ export interface ProjectItem {
   deliverables: string[];
   metrics: ProjectMetric[];
   stack: string[];
-  schematicKind: "floorplan" | "shield" | "reactor" | "graph" | "clinic";
+  schematicKind: "floorplan" | "shield" | "reactor" | "graph";
   links: ProjectLink[];
 }
 
