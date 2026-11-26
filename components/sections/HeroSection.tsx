@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDownRight, ExternalLink, Mail } from "lucide-react";
+import { ArrowDownRight, ExternalLink, MessageSquare } from "lucide-react";
 import React from "react";
 import { useWorkbench } from "@/components/providers/WorkbenchProvider";
 import { SpatialCadViewport } from "@/components/sections/SpatialCadViewport";
@@ -85,7 +85,7 @@ export function HeroSection() {
                 href="#contact"
                 className="inline-flex items-center gap-2 rounded-[2px] border border-hairline-strong bg-panel px-4 py-2.5 text-sm font-medium text-ink transition-colors hover:border-accent hover:bg-panel-hover"
               >
-                <Mail className="h-4 w-4 text-accent" />
+                <MessageSquare className="h-4 w-4 text-accent" />
                 <span>{hero.secondaryCta}</span>
               </a>
             </div>

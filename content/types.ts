@@ -1,7 +1,12 @@
 export type Locale = "no" | "en";
 export type ThemeMode = "dark" | "blueprint";
 
-export type ProjectCategory = "all" | "spatial" | "security" | "saas";
+export type ProjectCategory =
+  | "all"
+  | "spatial"
+  | "security"
+  | "saas"
+  | "web";
 
 export interface ProjectLink {
   label: string;
@@ -28,7 +33,7 @@ export interface ProjectItem {
   deliverables: string[];
   metrics: ProjectMetric[];
   stack: string[];
-  schematicKind: "floorplan" | "shield" | "reactor" | "graph";
+  schematicKind: "floorplan" | "shield" | "reactor" | "graph" | "portal";
   links: ProjectLink[];
 }
 
@@ -186,9 +191,8 @@ export interface SiteContent {
     subtitle: string;
     availabilityLabel: string;
     availabilityValue: string;
-    copyEmailLabel: string;
-    copiedEmailLabel: string;
-    sendMailLabel: string;
+    linkedinCtaLabel: string;
+    githubCtaLabel: string;
     channelsLabel: string;
     coordinatesLabel: string;
     footerNote: string;

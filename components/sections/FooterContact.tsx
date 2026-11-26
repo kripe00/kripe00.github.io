@@ -1,12 +1,7 @@
 "use client";
 
-import {
-  ArrowUpRight,
-  Check,
-  Copy,
-  Mail,
-} from "lucide-react";
-import React, { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
+import React from "react";
 import { useWorkbench } from "@/components/providers/WorkbenchProvider";
 import {
   GitHubIcon,
@@ -19,32 +14,21 @@ import { PROFILE_CONFIG } from "@/content";
 export function FooterContact() {
   const { content } = useWorkbench();
   const { contact } = content;
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(PROFILE_CONFIG.email);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 2400);
-    } catch {
-      window.location.href = `mailto:${PROFILE_CONFIG.email}`;
-    }
-  };
 
   const channels = [
-    {
-      id: "footer-github",
-      label: "GitHub",
-      handle: "@kripe00",
-      href: PROFILE_CONFIG.links.github,
-      icon: GitHubIcon,
-    },
     {
       id: "footer-linkedin",
       label: "LinkedIn",
       handle: "Kristian Sollie Pedersen",
       href: PROFILE_CONFIG.links.linkedin,
       icon: LinkedInIcon,
+    },
+    {
+      id: "footer-github",
+      label: "GitHub",
+      handle: "@kripe00",
+      href: PROFILE_CONFIG.links.github,
+      icon: GitHubIcon,
     },
     {
       id: "footer-makerworld",
@@ -87,40 +71,31 @@ export function FooterContact() {
                 {contact.subtitle}
               </p>
 
-              {/* One-Click Copy Email + Mailto Fallback */}
+              {/* Primary Contact Action: LinkedIn Message */}
               <div className="mt-7 flex flex-wrap items-center gap-3">
-                <button
-                  id="copy-email-btn"
-                  type="button"
-                  onClick={handleCopyEmail}
-                  className="inline-flex cursor-pointer items-center gap-2.5 rounded-[2px] bg-accent px-4 py-2.5 font-mono text-xs font-semibold text-ink-inverse transition-transform hover:-translate-y-0.5 active:translate-y-0"
+                <a
+                  id="contact-linkedin-cta"
+                  href={PROFILE_CONFIG.links.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2.5 rounded-[2px] bg-accent px-4 py-2.5 font-mono text-xs font-semibold text-ink-inverse transition-transform hover:-translate-y-0.5 active:translate-y-0"
                 >
-                  {copied ? (
-                    <>
-                      <Check className="h-4 w-4" />
-                      <span>{contact.copiedEmailLabel}</span>
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="h-4 w-4" />
-                      <span>{PROFILE_CONFIG.email}</span>
-                    </>
-                  )}
-                </button>
+                  <LinkedInIcon className="h-4 w-4" />
+                  <span>{contact.linkedinCtaLabel}</span>
+                  <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </a>
 
                 <a
-                  id="mailto-direct-link"
-                  href={`mailto:${PROFILE_CONFIG.email}`}
+                  id="contact-github-cta"
+                  href={PROFILE_CONFIG.links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-[2px] border border-hairline-strong bg-recessed px-3.5 py-2.5 font-mono text-xs font-medium text-ink-secondary transition-colors hover:border-accent hover:text-ink"
                 >
-                  <Mail className="h-3.5 w-3.5 text-accent" />
-                  <span>{contact.sendMailLabel}</span>
+                  <GitHubIcon className="h-3.5 w-3.5 text-accent" />
+                  <span>{contact.githubCtaLabel}</span>
                 </a>
               </div>
-
-              <span role="status" aria-live="polite" className="sr-only">
-                {copied ? contact.copiedEmailLabel : ""}
-              </span>
             </div>
 
             {/* External Channels Directory */}

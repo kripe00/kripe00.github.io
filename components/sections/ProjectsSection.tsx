@@ -322,6 +322,85 @@ function ProjectSchematic({
           </text>
         </svg>
       );
+    case "portal":
+      return (
+        <svg
+          viewBox="0 0 220 110"
+          className="h-24 w-full text-ink-muted"
+          aria-hidden="true"
+        >
+          <rect
+            x="12"
+            y="12"
+            width="196"
+            height="86"
+            fill="none"
+            stroke="currentColor"
+            strokeOpacity="0.45"
+          />
+          <line
+            x1="12"
+            y1="28"
+            x2="208"
+            y2="28"
+            stroke="currentColor"
+            strokeOpacity="0.45"
+          />
+          <rect
+            x="22"
+            y="38"
+            width="104"
+            height="24"
+            fill="var(--accent-primary-soft)"
+            stroke="var(--accent-primary)"
+            strokeWidth="1.1"
+          />
+          <rect
+            x="22"
+            y="68"
+            width="48"
+            height="20"
+            fill="var(--accent-cyan-soft)"
+            stroke="var(--accent-cyan)"
+          />
+          <rect
+            x="78"
+            y="68"
+            width="48"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            strokeOpacity="0.55"
+          />
+          <rect
+            x="138"
+            y="38"
+            width="58"
+            height="50"
+            fill="var(--accent-cyan-soft)"
+            stroke="var(--accent-cyan)"
+            strokeWidth="1.1"
+          />
+          <text
+            x="28"
+            y="53"
+            fill="var(--accent-primary)"
+            fontSize="7.5"
+            fontFamily="monospace"
+          >
+            TINACMS · EKK
+          </text>
+          <text
+            x="146"
+            y="66"
+            fill="var(--accent-cyan)"
+            fontSize="7.5"
+            fontFamily="monospace"
+          >
+            AI ASSIST
+          </text>
+        </svg>
+      );
   }
 }
 
@@ -348,7 +427,13 @@ export function ProjectsSection() {
     }));
   };
 
-  const filterKeys: ProjectCategory[] = ["all", "spatial", "security", "saas"];
+  const filterKeys: ProjectCategory[] = [
+    "all",
+    "spatial",
+    "security",
+    "saas",
+    "web",
+  ];
 
   return (
     <section

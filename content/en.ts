@@ -89,10 +89,11 @@ export const contentEN: SiteContent = {
     subtitle:
       "Spanning commercial 2D/3D spatial planning and enterprise AI security to real-time browser simulations and bespoke community SaaS.",
     filters: {
-      all: "All Systems (04)",
+      all: "All Systems (05)",
       spatial: "Spatial 3D & Sim",
       security: "AI & Security",
       saas: "Platform & SaaS",
+      web: "Web & CMS",
     },
     labels: {
       problem: "Problem Statement",
@@ -223,7 +224,7 @@ export const contentEN: SiteContent = {
         category: "saas",
         highlightBadge: "Live on the mats & in daily club ops",
         summary:
-          "Visual decision-tree and flowchart app for Brazilian Jiu-Jitsu techniques (tapMap), accompanied by a suite of custom PWAs handling belt progression, laundry rosters, instructor timesheets, and operations for Eidsvoll Kampsportklubb and Hadeland Kampsport.",
+          "Visual decision-tree and flowchart app for Brazilian Jiu-Jitsu techniques (tapMap), accompanied by custom internal PWAs handling belt progression, laundry rosters, instructor timesheets, and operations for Eidsvoll Kampsportklubb and Hadeland Kampsport.",
         problem:
           "BJJ is a directed graph of positions, transitions, and counters that flat video playlists fail to capture — while volunteer-run academies lose hours to brittle spreadsheets for attendance, mat/loaner-gi laundry, and coaching hours.",
         architecture:
@@ -231,7 +232,7 @@ export const contentEN: SiteContent = {
         deliverables: [
           "tapMap: Interactive grapple-graph builder mapping positional transitions, sweeps, and submission chains",
           "Custom operational apps for belt/stripe tracking, laundry rotation schedules, and instructor timesheets",
-          "Public club portals and member tooling deployed for Eidsvoll Kampsportklubb and Hadeland Kampsport",
+          "Internal club tooling in active weekly use across Eidsvoll Kampsportklubb and Hadeland Kampsport",
         ],
         metrics: [
           { label: "Academies", value: "Eidsvoll & Hadeland" },
@@ -253,8 +254,49 @@ export const contentEN: SiteContent = {
             href: PROFILE_CONFIG.links.repos.tapMap,
             kind: "github",
           },
+        ],
+      },
+      {
+        id: "kampsport-eidsvoll-web",
+        index: "PRJ-05",
+        title: "Eidsvoll Kampsportklubb (kampsporteidsvoll.no)",
+        contextBadge: "Production Club Platform & CMS",
+        period: "2026 – present",
+        category: "web",
+        highlightBadge: "TinaCMS · Interactive Recommender & AI Assistant",
+        summary:
+          "Full-featured, high-speed web platform and member portal for Eidsvoll Kampsportklubb — featuring Git-backed TinaCMS publishing, an interactive class recommender, IBJJF rules engine, live timetable, and an embedded club AI assistant.",
+        problem:
+          "Prospective members and parents need immediate mobile clarity on classes, age groups, free-trial onboarding, and competition rules — while board members and coaches need to publish news and schedule updates without touching code.",
+        architecture:
+          "Engineered with Next.js 16, React 19, TypeScript, and Tailwind CSS v4, paired with TinaCMS for structured editorial workflows and Firebase (Hosting, Firestore & Functions) backing interactive features and the EKK assistant.",
+        deliverables: [
+          "2-step interactive martial arts recommender matching visitors to BJJ, Muay Thai, Crosstraining/Yoga, or Kids classes in 30 seconds",
+          "Schema-driven TinaCMS editorial workflow for news posts, timetables, board governance, and club sponsors",
+          "Dedicated IBJJF competition-rules module with automated unit tests plus an integrated club AI assistant",
+        ],
+        metrics: [
+          { label: "Live Site", value: "kampsporteidsvoll.no" },
+          { label: "CMS & Cloud", value: "TinaCMS + Firebase" },
+          { label: "Stack", value: "Next.js 16 · React 19" },
+        ],
+        stack: [
+          "Next.js",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS",
+          "TinaCMS",
+          "Firebase",
+        ],
+        schematicKind: "portal",
+        links: [
           {
-            label: "Eidsvoll Kampsportklubb repo",
+            label: "kampsporteidsvoll.no",
+            href: PROFILE_CONFIG.links.kampsportEidsvoll,
+            kind: "external",
+          },
+          {
+            label: "GitHub Repo",
             href: PROFILE_CONFIG.links.repos.eidsvollBjj,
             kind: "github",
           },
@@ -486,12 +528,11 @@ export const contentEN: SiteContent = {
     sectionCode: "SEC-05 // CONTACT & CHANNELS",
     title: "Let's build something solid",
     subtitle:
-      "Always happy to connect regarding spatial 3D on the web, secure AI systems, selected engineering projects, or parametric CAD and Jiu-Jitsu.",
+      "Send a message on LinkedIn if you'd like to connect regarding spatial 3D on the web, secure AI systems, engineering projects, or parametric CAD and Jiu-Jitsu.",
     availabilityLabel: "Operational status",
-    availabilityValue: "Fullstack @ AxisOS · Open to technical discussion & select work",
-    copyEmailLabel: "Copy email address",
-    copiedEmailLabel: "Copied to clipboard",
-    sendMailLabel: "Open mail client",
+    availabilityValue: "Fullstack @ AxisOS · Reach out via LinkedIn",
+    linkedinCtaLabel: "Message on LinkedIn",
+    githubCtaLabel: "View GitHub (@kripe00)",
     channelsLabel: "Profiles & repositories",
     coordinatesLabel: "Coordinates",
     footerNote:

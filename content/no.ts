@@ -89,10 +89,11 @@ export const contentNO: SiteContent = {
     subtitle:
       "Fra kommersiell 2D/3D-arealplanlegging og enterprise AI-sikkerhet til sanntids 3D-simulering og skreddersydde bransjesystemer.",
     filters: {
-      all: "Alle systemer (04)",
+      all: "Alle systemer (05)",
       spatial: "Romlig 3D & Spill",
       security: "AI & Sikkerhet",
       saas: "Plattform & SaaS",
+      web: "Web & CMS",
     },
     labels: {
       problem: "Problemstilling",
@@ -223,7 +224,7 @@ export const contentNO: SiteContent = {
         category: "saas",
         highlightBadge: "I aktiv bruk på matta & i klubbdrift",
         summary:
-          "Visuell flytkart-app for Brasiliansk Jiu-Jitsu-teknikker (tapMap), kombinert med en pakke skreddersydde webapper for graderingssporing, vaskelister, timelister og daglig klubbdrift for Eidsvoll Kampsportklubb og Hadeland Kampsport.",
+          "Visuell flytkart-app for Brasiliansk Jiu-Jitsu-teknikker (tapMap), kombinert med skreddersydde interne webapper for graderingssporing, vaskelister, timelister og daglig drift i Eidsvoll Kampsportklubb og Hadeland Kampsport.",
         problem:
           "BJJ er et komplekst beslutningstre av posisjoner, overganger og kontringer som er vanskelig å strukturere i flate videolister — samtidig som frivillige kampsportklubber ofte drukner i manuelle regneark for oppmøte, vask og instruktørtimer.",
         architecture:
@@ -231,7 +232,7 @@ export const contentNO: SiteContent = {
         deliverables: [
           "tapMap: Interaktivt posisjons- og teknikk-flytkart for å kartlegge egne sekvenser, sweeps og submissions",
           "Klubbsystemer for graderingssporing, rettferdige vaskelister og instruktørtimelister med rollebasert tilgang",
-          "Offentlige klubbflater og medlemsverktøy utviklet for Eidsvoll Kampsportklubb og Hadeland Kampsport",
+          "Skreddersydde verktøy i daglig bruk hos både Eidsvoll Kampsportklubb og Hadeland Kampsport",
         ],
         metrics: [
           { label: "Klubber", value: "Eidsvoll & Hadeland" },
@@ -253,8 +254,49 @@ export const contentNO: SiteContent = {
             href: PROFILE_CONFIG.links.repos.tapMap,
             kind: "github",
           },
+        ],
+      },
+      {
+        id: "kampsport-eidsvoll-web",
+        index: "PRJ-05",
+        title: "Eidsvoll Kampsportklubb (kampsporteidsvoll.no)",
+        contextBadge: "Klubbplattform & CMS i produksjon",
+        period: "2026 – nå",
+        category: "web",
+        highlightBadge: "TinaCMS · Interaktiv veiviser & AI-assistent",
+        summary:
+          "Komplett, lynrask klubbnettside og medlemsportal for Eidsvoll Kampsportklubb på Dal — med Git-basert publisering i TinaCMS, interaktiv kampsport-veiviser, IBJJF-regelmodul, timeplan og innebygd klubb-assistent.",
+        problem:
+          "Nye medlemmer og foresatte trenger rask, tillitsvekkende oversikt over partier, aldersgrupper, prøveperiode og regler på mobil — mens styret og instruktører må kunne publisere nyheter og oppdatere timeplaner uten å redigere kode.",
+        architecture:
+          "Bygget med Next.js 16, React 19, TypeScript og Tailwind CSS v4, koblet mot TinaCMS for skjemastyrt redaksjonelt innhold og Firebase (Hosting, Firestore & Functions) for interaktive tjenester og EKK-assistenten.",
+        deliverables: [
+          "2-stegs interaktiv veiviser som anbefaler riktig parti (BJJ, Muay Thai, Crosstrening/Yoga eller Barneparti) på 30 sekunder",
+          "Redaktørvennlig CMS-arbeidsflyt i TinaCMS for nyheter, timeplaner, styreinfo og støttespillere",
+          "Dedikert konkurranse- og IBJJF-regelmodul med automatiserte tester samt innebygd AI-klubb-assistent",
+        ],
+        metrics: [
+          { label: "Nettside", value: "kampsporteidsvoll.no" },
+          { label: "CMS & Sky", value: "TinaCMS + Firebase" },
+          { label: "Stack", value: "Next.js 16 · React 19" },
+        ],
+        stack: [
+          "Next.js",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS",
+          "TinaCMS",
+          "Firebase",
+        ],
+        schematicKind: "portal",
+        links: [
           {
-            label: "Eidsvoll Kampsportklubb repo",
+            label: "kampsporteidsvoll.no",
+            href: PROFILE_CONFIG.links.kampsportEidsvoll,
+            kind: "external",
+          },
+          {
+            label: "GitHub Repo",
             href: PROFILE_CONFIG.links.repos.eidsvollBjj,
             kind: "github",
           },
@@ -486,12 +528,11 @@ export const contentNO: SiteContent = {
     sectionCode: "SEC-05 // KONTAKT & KANALER",
     title: "La oss bygge noe skikkelig",
     subtitle:
-      "Åpen for faglige samtaler om romlig 3D på web, sikker AI-arkitektur, utvalgte utviklingsoppdrag eller en prat om parametriske modeller og Jiu-Jitsu.",
+      "Send gjerne en melding på LinkedIn hvis du vil slå av en prat om romlig 3D på web, sikker AI-arkitektur, prosjekter eller parametriske modeller og Jiu-Jitsu.",
     availabilityLabel: "Operativ status",
-    availabilityValue: "Fullstack @ AxisOS · Åpen for fagprat & utvalgte prosjekter",
-    copyEmailLabel: "Kopier e-postadresse",
-    copiedEmailLabel: "Kopiert til utklippstavle",
-    sendMailLabel: "Åpne i e-postklient",
+    availabilityValue: "Fullstack @ AxisOS · Send melding på LinkedIn for kontakt",
+    linkedinCtaLabel: "Send melding på LinkedIn",
+    githubCtaLabel: "Se kode på GitHub (@kripe00)",
     channelsLabel: "Eksterne profiler & kode",
     coordinatesLabel: "Koordinater",
     footerNote:
