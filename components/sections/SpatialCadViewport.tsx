@@ -705,8 +705,7 @@ export function SpatialCadViewport() {
       <SpecCard>
         {/* Top Instrument Header */}
         <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-recessed px-3.5 py-2.5">
-          <div className="flex items-center gap-2 font-mono text-[11px] tracking-wider text-ink-secondary">
-            <span className="inline-block h-2 w-2 rounded-full bg-live" />
+          <div className="font-mono text-[11px] tracking-wider text-ink-secondary">
             <span>{vpCopy.panelTitle}</span>
           </div>
           <span className="font-mono text-[10px] tracking-wider text-ink-muted uppercase">

@@ -31,7 +31,7 @@ export const contentNO: SiteContent = {
     subheadlineHighlight: "AxisOS & Floorplan Studio",
     subheadlineTail:
       " til daglig. Bygger interaktive 3D-opplevelser, sikker AI-arkitektur, skreddersydde klubbsystemer og parametriske 3D-modeller.",
-    telemetryTitle: "SYSTEMTELEMETRI // SANNTID",
+    telemetryTitle: "NØKKELINFO",
     telemetry: [
       {
         key: "role",

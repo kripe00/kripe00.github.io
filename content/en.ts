@@ -31,7 +31,7 @@ export const contentEN: SiteContent = {
     subheadlineHighlight: "AxisOS & Floorplan Studio",
     subheadlineTail:
       " day to day. Engineering interactive 3D web tools, resilient AI architectures, custom martial arts club platforms, and parametric CAD parts.",
-    telemetryTitle: "SYSTEM TELEMETRY // LIVE",
+    telemetryTitle: "AT A GLANCE",
     telemetry: [
       {
         key: "role",

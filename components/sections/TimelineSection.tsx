@@ -65,12 +65,6 @@ export function TimelineSection() {
                         </span>
                         <span className="text-hairline-strong">·</span>
                         <span className="text-ink-muted">{entry.location}</span>
-                        {entry.current && (
-                          <span className="inline-flex items-center gap-1 rounded-[2px] border border-live/40 bg-recessed px-2 py-0.5 text-[10px] font-medium text-live">
-                            <span className="h-1.5 w-1.5 rounded-full bg-live" />
-                            {timeline.activeBadge}
-                          </span>
-                        )}
                       </div>
 
                       <h3 className="mt-1.5 text-lg font-semibold tracking-[-0.015em] text-ink">

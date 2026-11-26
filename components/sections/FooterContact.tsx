@@ -52,9 +52,8 @@ export function FooterContact() {
             <span className="font-semibold tracking-[0.12em] text-accent uppercase">
               {contact.sectionCode}
             </span>
-            <span className="flex items-center gap-2 text-ink-secondary">
-              <span className="h-2 w-2 rounded-full bg-live" />
-              <span>{contact.availabilityValue}</span>
+            <span className="text-ink-secondary">
+              {contact.availabilityValue}
             </span>
           </div>
 

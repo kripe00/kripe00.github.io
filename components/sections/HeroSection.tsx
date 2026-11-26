@@ -146,10 +146,7 @@ export function HeroSection() {
           <SpecCard>
             <div className="flex items-center justify-between border-b border-hairline bg-recessed px-4 py-2 font-mono text-[10px] tracking-[0.14em] text-ink-muted uppercase">
               <span>{hero.telemetryTitle}</span>
-              <span className="flex items-center gap-1.5 text-live">
-                <span className="inline-block h-1.5 w-1.5 rounded-full bg-live" />
-                ONLINE
-              </span>
+              <span>{PROFILE_CONFIG.municipality}</span>
             </div>
             <dl className="grid grid-cols-1 divide-y divide-hairline sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x">
               {hero.telemetry.map((entry, idx) => (
