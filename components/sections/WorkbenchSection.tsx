@@ -20,9 +20,7 @@ function BjjBrownBeltGraphic() {
             "repeating-linear-gradient(90deg, #5c3a21 0px, #5c3a21 6px, #4e301b 6px, #4e301b 12px)",
         }}
       />
-      <div className="flex w-20 items-center justify-start gap-1.5 border-x border-black/60 bg-[#111317] px-2.5">
-        <span className="h-full w-1 bg-white/85" />
-      </div>
+      <div className="w-20 border-x border-black/60 bg-[#111317]" />
       <div
         className="w-8"
         style={{
