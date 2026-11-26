@@ -8,7 +8,7 @@ export const PROFILE_CONFIG = {
   email: "kristian.sollie.pedersen@gmail.com",
   links: {
     github: "https://github.com/kripe00",
-    linkedin: "https://www.linkedin.com/in/kristian-sollie-pedersen",
+    linkedin: "https://www.linkedin.com/in/kristian-sollie-pedersen-9927902a4",
     makerworld: "https://makerworld.com",
     repos: {
       tapMap: "https://github.com/kripe00/tapMap",
