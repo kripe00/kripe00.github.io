@@ -50,7 +50,7 @@ export const contentEN: SiteContent = {
       {
         key: "bjj",
         label: "Off-hours",
-        value: "BJJ Brown Belt, CAD & workshop",
+        value: "BJJ Brown Belt & 3D printing",
       },
     ],
     primaryCta: "View projects",
@@ -396,9 +396,9 @@ export const contentEN: SiteContent = {
   },
   workbench: {
     sectionCode: "03 · Off-screen",
-    title: "On the mats, in the workshop, and in the kitchen",
+    title: "On the mats and at the 3D printer",
     subtitle:
-      "Away from work, most of my time goes to Jiu-Jitsu at Dal, 3D printing, renovating our house, and cooking from scratch.",
+      "Outside of work, most of my time goes to Jiu-Jitsu at Dal and parametric modeling in OpenSCAD.",
     items: [
       {
         id: "bjj",
@@ -417,7 +417,7 @@ export const contentEN: SiteContent = {
           { label: "Training since", value: "2013" },
           { label: "Club role", value: "Chairman & instructor" },
         ],
-        spanClass: "lg:col-span-7",
+        spanClass: "lg:col-span-6",
       },
       {
         id: "cad",
@@ -436,30 +436,11 @@ export const contentEN: SiteContent = {
           { label: "Materials", value: "PETG · PLA · TPU" },
           { label: "Profile", value: "MakerWorld" },
         ],
-        spanClass: "lg:col-span-5",
+        spanClass: "lg:col-span-6",
         externalLink: {
           label: "View models on MakerWorld",
           href: PROFILE_CONFIG.links.makerworld,
         },
-      },
-      {
-        id: "workshop",
-        code: "Home & craft",
-        title: "Smart home, knife sharpening, 70s house & baking steel",
-        subtitle: "Home Assistant, whetstones, renovation, and cold-fermented dough",
-        description:
-          "At home I enjoy hands-on projects with tangible results: running local Home Assistant automation, renovating a 1970s house room by room, sharpening kitchen knives on whetstones, and weekend baking on steel.",
-        highlights: [
-          "Local Home Assistant and Docker setup running lights, heating, and sensors",
-          "Freehand whetstone and leather-strop knife sharpening up to a mirror edge",
-          "Renovating a 1970s house and baking 48-72h cold-fermented dough on baking steel",
-        ],
-        specs: [
-          { label: "Smart home", value: "Home Assistant" },
-          { label: "Sharpening", value: "Whetstone → mirror" },
-          { label: "Dough", value: "48-72h cold ferment" },
-        ],
-        spanClass: "lg:col-span-12",
       },
     ],
   },

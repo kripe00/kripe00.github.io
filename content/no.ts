@@ -50,7 +50,7 @@ export const contentNO: SiteContent = {
       {
         key: "bjj",
         label: "På fritiden",
-        value: "BJJ brunt belte, CAD & verksted",
+        value: "BJJ brunt belte & 3D-printing",
       },
     ],
     primaryCta: "Se prosjekter",
@@ -396,9 +396,9 @@ export const contentNO: SiteContent = {
   },
   workbench: {
     sectionCode: "03 · Utenfor skjermen",
-    title: "På matta, i verkstedet og på kjøkkenet",
+    title: "På matta og ved 3D-printeren",
     subtitle:
-      "Når jeg ikke koder går det stort sett i Jiu-Jitsu på Dal, 3D-printing, oppussing og matlaging fra bunnen av.",
+      "Når jeg ikke koder går fritiden stort sett til Jiu-Jitsu på Dal og parametrisk modellering i OpenSCAD.",
     items: [
       {
         id: "bjj",
@@ -417,7 +417,7 @@ export const contentNO: SiteContent = {
           { label: "Trent siden", value: "2013" },
           { label: "Rolle", value: "Styreleder & instruktør" },
         ],
-        spanClass: "lg:col-span-7",
+        spanClass: "lg:col-span-6",
       },
       {
         id: "cad",
@@ -436,30 +436,11 @@ export const contentNO: SiteContent = {
           { label: "Plast", value: "PETG · PLA · TPU" },
           { label: "Profil", value: "MakerWorld" },
         ],
-        spanClass: "lg:col-span-5",
+        spanClass: "lg:col-span-6",
         externalLink: {
           label: "Se modeller på MakerWorld",
           href: PROFILE_CONFIG.links.makerworld,
         },
-      },
-      {
-        id: "workshop",
-        code: "Hus & håndverk",
-        title: "Smarthus, knivsliping, 70-tallshus & bakestål",
-        subtitle: "Home Assistant, våtsteiner, oppussing og kaldhevet deig",
-        description:
-          "Hjemme går fritiden gjerne til prosjekter der man ser konkrete resultater: lokal Home Assistant-styring uten skyavhengighet, oppussing av et hus fra 70-tallet, sliping av kjøkkenkniver på våtstein og helgebakst på bakestål.",
-        highlights: [
-          "Lokal Home Assistant og Docker-oppsett hjemme for lys, varme og sensorer",
-          "Sliping av kjøkkenkniver for hånd på våtstein og lærstropp til speilfinish",
-          "Oppussing av 70-tallshus og langtidshevet pizza- og brøddeig på bakestål",
-        ],
-        specs: [
-          { label: "Smarthus", value: "Home Assistant" },
-          { label: "Sliping", value: "Våtstein → speilfinish" },
-          { label: "Deig", value: "48-72t kaldheving" },
-        ],
-        spanClass: "lg:col-span-12",
       },
     ],
   },

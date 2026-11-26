@@ -58,7 +58,7 @@ export interface WorkbenchSpec {
 }
 
 export interface WorkbenchItem {
-  id: "bjj" | "cad" | "workshop";
+  id: "bjj" | "cad";
   code: string;
   title: string;
   subtitle: string;

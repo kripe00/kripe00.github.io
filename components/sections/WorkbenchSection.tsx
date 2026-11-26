@@ -111,13 +111,7 @@ export function WorkbenchSection() {
                   {item.description}
                 </p>
 
-                <ul
-                  className={`mt-4 grid gap-2 text-sm text-ink-secondary ${
-                    item.id === "workshop"
-                      ? "grid-cols-1 md:grid-cols-3 md:gap-4"
-                      : "grid-cols-1"
-                  }`}
-                >
+                <ul className="mt-4 grid grid-cols-1 gap-2 text-sm text-ink-secondary">
                   {item.highlights.map((hl) => (
                     <li
                       key={hl}
