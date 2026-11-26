@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "npm run build && npx -y firebase-tools@latest deploy --only hosting --project hjemmeside-99048"
   },
   "dependencies": {
     "framer-motion": "^14.14.0",

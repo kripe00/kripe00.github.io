@@ -1,6 +1,8 @@
 import { ImageResponse } from "next/og";
 import { PROFILE_CONFIG } from "@/content";
 
+export const dynamic = "force-static";
+
 export const alt =
   "Kristian Sollie Pedersen — Fullstack-utvikler, Romlig 3D & AI-sikkerhet";
 

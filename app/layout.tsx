@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kristiansolliepedersen.no"),
+  metadataBase: new URL("https://hjemmeside-99048.web.app"),
   title: CONTENT_DICTIONARY.no.meta.title,
   description: CONTENT_DICTIONARY.no.meta.description,
   authors: [{ name: PROFILE_CONFIG.fullName, url: PROFILE_CONFIG.links.github }],
