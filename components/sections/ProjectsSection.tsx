@@ -401,6 +401,52 @@ function ProjectSchematic({
           </text>
         </svg>
       );
+    case "pixel":
+      return (
+        <svg
+          viewBox="0 0 220 110"
+          className="h-24 w-full text-ink-muted"
+          aria-hidden="true"
+        >
+          {[0, 1, 2, 3, 4, 5].map((c) =>
+            [0, 1, 2].map((r) => {
+              const active =
+                (c === 1 && r === 1) ||
+                (c === 2 && r === 1) ||
+                (c === 4 && r === 0) ||
+                (c === 4 && r === 2);
+              return (
+                <rect
+                  key={`${c}-${r}`}
+                  x={28 + c * 28}
+                  y={16 + r * 24}
+                  width="20"
+                  height="16"
+                  fill={
+                    active
+                      ? "var(--accent-primary-soft)"
+                      : "var(--accent-cyan-soft)"
+                  }
+                  stroke={
+                    active ? "var(--accent-primary)" : "var(--accent-cyan)"
+                  }
+                  strokeWidth={active ? "1.3" : "0.8"}
+                  strokeOpacity={active ? "1" : "0.55"}
+                />
+              );
+            })
+          )}
+          <text
+            x="28"
+            y="101"
+            fill="var(--accent-primary)"
+            fontSize="8"
+            fontFamily="monospace"
+          >
+            ITCH.IO · PIXELFRONTLINE
+          </text>
+        </svg>
+      );
   }
 }
 
@@ -484,7 +530,10 @@ export function ProjectsSection() {
         <div className="flex flex-col gap-6">
           <AnimatePresence mode="popLayout">
             {filteredItems.map((project) => {
-              const isExpanded = Boolean(expandedIds[project.id]);
+              const hasDetails = Boolean(
+                project.problem && project.architecture && project.deliverables?.length
+              );
+              const isExpanded = hasDetails && Boolean(expandedIds[project.id]);
               return (
                 <motion.div
                   key={project.id}
@@ -546,6 +595,23 @@ export function ProjectsSection() {
                             </span>
                           ))}
                         </div>
+
+                        {/* Optional Playable / Interactive Embed (e.g. itch.io) */}
+                        {project.embed && (
+                          <div className="mt-5 max-w-[552px] overflow-hidden rounded-[2px] border border-hairline bg-[#0b1018]">
+                            <iframe
+                              src={project.embed.src}
+                              title={project.embed.title}
+                              height={project.embed.height}
+                              loading="lazy"
+                              className="block w-full border-0"
+                            >
+                              <a href={project.embed.fallbackHref}>
+                                {project.embed.fallbackLabel}
+                              </a>
+                            </iframe>
+                          </div>
+                        )}
                       </div>
 
                       {/* Right Schematic & Quick Telemetry Metrics */}
@@ -574,7 +640,7 @@ export function ProjectsSection() {
 
                     {/* Expandable Problem / Architecture / Deliverables Blueprint */}
                     <AnimatePresence initial={false}>
-                      {isExpanded && (
+                      {isExpanded && hasDetails && (
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: "auto", opacity: 1 }}
@@ -606,7 +672,7 @@ export function ProjectsSection() {
                                 {projects.labels.deliverables}
                               </h4>
                               <ul className="space-y-2 text-sm text-ink-secondary">
-                                {project.deliverables.map((point) => (
+                                {project.deliverables?.map((point) => (
                                   <li
                                     key={point}
                                     className="flex items-start gap-2 leading-snug"
@@ -623,51 +689,57 @@ export function ProjectsSection() {
                     </AnimatePresence>
 
                     {/* Card Footer Bar: Inspect Toggle & Repo Links */}
-                    <div className="flex flex-wrap items-center justify-between gap-3 border-t border-hairline bg-panel px-4 py-2.5 sm:px-6">
-                      <button
-                        id={`toggle-spec-${project.id}`}
-                        type="button"
-                        onClick={() => toggleExpand(project.id)}
-                        aria-expanded={isExpanded}
-                        className="inline-flex cursor-pointer items-center gap-2 font-mono text-xs font-medium text-ink-secondary transition-colors hover:text-accent"
-                      >
-                        <Layers className="h-3.5 w-3.5 text-accent" />
-                        <span>
-                          {isExpanded
-                            ? projects.labels.collapseSpec
-                            : projects.labels.inspectSpec}
-                        </span>
-                        <ChevronDown
-                          className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                            isExpanded ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
+                    {(hasDetails || project.links.length > 0) && (
+                      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-hairline bg-panel px-4 py-2.5 sm:px-6">
+                        {hasDetails ? (
+                          <button
+                            id={`toggle-spec-${project.id}`}
+                            type="button"
+                            onClick={() => toggleExpand(project.id)}
+                            aria-expanded={isExpanded}
+                            className="inline-flex cursor-pointer items-center gap-2 font-mono text-xs font-medium text-ink-secondary transition-colors hover:text-accent"
+                          >
+                            <Layers className="h-3.5 w-3.5 text-accent" />
+                            <span>
+                              {isExpanded
+                                ? projects.labels.collapseSpec
+                                : projects.labels.inspectSpec}
+                            </span>
+                            <ChevronDown
+                              className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                                isExpanded ? "rotate-180" : ""
+                              }`}
+                            />
+                          </button>
+                        ) : (
+                          <span />
+                        )}
 
-                      {project.links.length > 0 && (
-                        <div className="flex flex-wrap items-center gap-2">
-                          {project.links.map((link) => (
-                            <a
-                              key={link.href}
-                              id={`project-link-${project.id}-${link.label
-                                .toLowerCase()
-                                .replace(/[^a-z0-9]+/g, "-")}`}
-                              href={link.href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 rounded-[2px] border border-hairline bg-recessed px-2.5 py-1 font-mono text-[11px] text-ink-secondary transition-colors hover:border-hairline-strong hover:text-ink"
-                            >
-                              {link.kind === "github" ? (
-                                <GitHubIcon className="h-3 w-3 text-accent" />
-                              ) : (
-                                <ExternalLink className="h-3 w-3 text-cyan" />
-                              )}
-                              <span>{link.label}</span>
-                            </a>
-                          ))}
-                        </div>
-                      )}
-                    </div>
+                        {project.links.length > 0 && (
+                          <div className="flex flex-wrap items-center gap-2">
+                            {project.links.map((link) => (
+                              <a
+                                key={link.href}
+                                id={`project-link-${project.id}-${link.label
+                                  .toLowerCase()
+                                  .replace(/[^a-z0-9]+/g, "-")}`}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 rounded-[2px] border border-hairline bg-recessed px-2.5 py-1 font-mono text-[11px] text-ink-secondary transition-colors hover:border-hairline-strong hover:text-ink"
+                              >
+                                {link.kind === "github" ? (
+                                  <GitHubIcon className="h-3 w-3 text-accent" />
+                                ) : (
+                                  <ExternalLink className="h-3 w-3 text-cyan" />
+                                )}
+                                <span>{link.label}</span>
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </SpecCard>
                 </motion.div>
               );

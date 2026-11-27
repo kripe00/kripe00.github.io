@@ -87,7 +87,7 @@ export const contentNO: SiteContent = {
     subtitle:
       "Et utvalg av det jeg jobber med på jobb, fra studier og på kveldstid.",
     filters: {
-      all: "Alle (5)",
+      all: "Alle (6)",
       spatial: "3D & Spill",
       security: "AI & Sikkerhet",
       saas: "Klubbsystemer",
@@ -297,6 +297,38 @@ export const contentNO: SiteContent = {
             label: "GitHub Repo",
             href: PROFILE_CONFIG.links.repos.eidsvollBjj,
             kind: "github",
+          },
+        ],
+      },
+      {
+        id: "pixelfrontline",
+        index: "06",
+        title: "PixelFrontline",
+        contextBadge: "Indie-spill · itch.io",
+        period: "Publisert på itch.io",
+        category: "spatial",
+        highlightBadge: "Spillbart på itch.io",
+        summary:
+          "Egenutviklet indiespill publisert på itch.io. Klikk deg rett inn via kortet under for å prøve spillet.",
+        metrics: [
+          { label: "Plattform", value: "itch.io" },
+          { label: "Utvikler", value: "kripe0000" },
+          { label: "Status", value: "Publisert" },
+        ],
+        stack: ["Spillutvikling", "itch.io", "Web"],
+        schematicKind: "pixel",
+        embed: {
+          src: PROFILE_CONFIG.links.pixelFrontlineEmbed,
+          title: "PixelFrontline by kripe0000",
+          fallbackHref: PROFILE_CONFIG.links.pixelFrontline,
+          fallbackLabel: "PixelFrontline by kripe0000",
+          height: 167,
+        },
+        links: [
+          {
+            label: "Spill på itch.io",
+            href: PROFILE_CONFIG.links.pixelFrontline,
+            kind: "external",
           },
         ],
       },

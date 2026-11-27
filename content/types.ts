@@ -19,6 +19,14 @@ export interface ProjectMetric {
   value: string;
 }
 
+export interface ProjectEmbed {
+  src: string;
+  title: string;
+  fallbackHref: string;
+  fallbackLabel: string;
+  height: number;
+}
+
 export interface ProjectItem {
   id: string;
   index: string;
@@ -28,12 +36,13 @@ export interface ProjectItem {
   category: Exclude<ProjectCategory, "all">;
   highlightBadge?: string;
   summary: string;
-  problem: string;
-  architecture: string;
-  deliverables: string[];
+  problem?: string;
+  architecture?: string;
+  deliverables?: string[];
   metrics: ProjectMetric[];
   stack: string[];
-  schematicKind: "floorplan" | "shield" | "reactor" | "graph" | "portal";
+  schematicKind: "floorplan" | "shield" | "reactor" | "graph" | "portal" | "pixel";
+  embed?: ProjectEmbed;
   links: ProjectLink[];
 }
 

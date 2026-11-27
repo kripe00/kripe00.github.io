@@ -87,7 +87,7 @@ export const contentEN: SiteContent = {
     subtitle:
       "Work from my day job, university capstone, and evening projects.",
     filters: {
-      all: "All (5)",
+      all: "All (6)",
       spatial: "3D & Games",
       security: "AI & Security",
       saas: "Club Apps",
@@ -297,6 +297,38 @@ export const contentEN: SiteContent = {
             label: "GitHub Repo",
             href: PROFILE_CONFIG.links.repos.eidsvollBjj,
             kind: "github",
+          },
+        ],
+      },
+      {
+        id: "pixelfrontline",
+        index: "06",
+        title: "PixelFrontline",
+        contextBadge: "Indie game · itch.io",
+        period: "Published on itch.io",
+        category: "spatial",
+        highlightBadge: "Playable on itch.io",
+        summary:
+          "Independent game published on itch.io. Launch or inspect it directly from the embed card below.",
+        metrics: [
+          { label: "Platform", value: "itch.io" },
+          { label: "Creator", value: "kripe0000" },
+          { label: "Status", value: "Published" },
+        ],
+        stack: ["Game Dev", "itch.io", "Web"],
+        schematicKind: "pixel",
+        embed: {
+          src: PROFILE_CONFIG.links.pixelFrontlineEmbed,
+          title: "PixelFrontline by kripe0000",
+          fallbackHref: PROFILE_CONFIG.links.pixelFrontline,
+          fallbackLabel: "PixelFrontline by kripe0000",
+          height: 167,
+        },
+        links: [
+          {
+            label: "Play on itch.io",
+            href: PROFILE_CONFIG.links.pixelFrontline,
+            kind: "external",
           },
         ],
       },
